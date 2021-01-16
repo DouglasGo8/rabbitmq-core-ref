@@ -111,7 +111,6 @@
     </plugins>
   </build>
   <modules>
-    <module>hello-rabbitmq</module>
-    <module>common-lib</module>
+    <module>fanout-exchange</module>
   </modules>
 </project>

@@ -17,3 +17,9 @@ $ docker run -d --name rabbitmq --restart always --hostname docker-rabbitmq -p 5
 6. Routing key is the key that the exchanges looks at to decide how to route the message
 7. Binding link between exchange to queues
 8. RabbitMQ 3.8 introduce Quorum Queue, that is a queue for replication quorum across Multiple RabbitMQ Server
+
+## Fanout Exchange
+1. Multiple Queues for single message
+2. Broadcast to all queues bound it (copy of message)
+
+
