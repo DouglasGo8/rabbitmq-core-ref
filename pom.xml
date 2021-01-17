@@ -108,9 +108,24 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>${surefire.plugin.version}</version>
       </plugin>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>${spring.boot-version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
   <modules>
+    <module>direct-exchange</module>
     <module>fanout-exchange</module>
+    <module>hello-rabbitmq</module>
+    <module>topic-exchange</module>
   </modules>
 </project>

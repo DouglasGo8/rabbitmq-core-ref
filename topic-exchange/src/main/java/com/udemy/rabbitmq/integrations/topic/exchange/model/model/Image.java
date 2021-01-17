@@ -1,4 +1,4 @@
-package com.udemy.rabbitmq.integrations.direct.exchange.model;
+package com.udemy.rabbitmq.integrations.topic.exchange.model.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

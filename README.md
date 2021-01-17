@@ -22,4 +22,22 @@ $ docker run -d --name rabbitmq --restart always --hostname docker-rabbitmq -p 5
 1. Multiple Queues for single message
 2. Broadcast to all queues bound it (copy of message)
 
+## Direct Exchange
+1. Send Selective queue(s)
+2. Based on routing key
+3. Routing key must match rule, or the message will be discarded
 
+## Topic Exchange
+1. Multiple criteria routing
+2. Special character on routing key
+3. "*" start - substitute exactly one word
+4. "#" hash  - substitute zero or more words
+
+```
+routing key structure -> source.size.type
+*.*.png
+#.jpg
+*.*.svg
+mobile.#
+*.large.svg
+```
